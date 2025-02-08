@@ -30,7 +30,7 @@ namespace BulkyWeb_Razor_Temp.Pages.Categories
                 return NotFound();
             _db.Categories.Remove(obj);
             _db.SaveChanges();
-            //TempData["success"] = "Category deleted successfully";
+            TempData["success"] = "Category deleted successfully";
             return RedirectToPage("Index");
         }
     }
